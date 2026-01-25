@@ -2,120 +2,128 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi E-commerce</title>
-
-    <!-- CSS CORRECTO -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Electric Cars Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
 
 <div class="layout">
 
-    <!-- HEADER -->
-    <header class="header">
-        <h1>Mi E-commerce</h1>
-    </header>
+    <!-- ===== MENÚ DE NAVEGACIÓN ===== -->
+    <nav class="menu">
 
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
-        <h3>Categorías</h3>
-        <ul>
-            <li>Perfumes (3)</li>
-            <li>Ropa Mujer (3)</li>
-            <li>Ropa Hombre (2)</li>
-            <li>Zapatos (1)</li>
+        <div class="menu-top">
+            <span class="logo">🚗 Electric Cars</span>
+
+            <!-- Control de navegación móvil-->
+            <input type="checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="nav-control">☰</label>
+        </div>
+
+        <ul class="menu-links">
+            <li class="activo">🚘 Inicio</li>
+            <li>📋 Catálogo</li>
+            <li>⚡ Modelos EV</li>
+            <li>🛠️ Servicio Técnico</li>
+            <li>📞 Contacto</li>
         </ul>
+
+        <!-- Información inferior del menú (desktop) -->
+
+        <footer class="menu-footer">
+            <div class="footer-icons">
+                <span>🚗</span>
+                <span>⚡</span>
+                <span>🔋</span>
+            </div>
+            <p>© 2026 Electric Cars · Movilidad sustentable</p>
+        </footer>
+
+    </nav>
+
+    <!-- ===== FILTROS DE VEHÍCULOS ===== -->
+    <aside class="filtros">
+        <label for="ordenar">Ordenar vehículos por:</label>
+        <select id="ordenar">
+            <option>Precio</option>
+            <option>Marca</option>
+            <option>Modelo</option>
+            <option>Año</option>
+        </select>
     </aside>
 
-    <!-- PRODUCTOS -->
-    <main class="products">
+    <!-- ===== CATÁLOGO DE AUTOS ===== -->
+    <main class="productos">
 
-        <div class="card">
-            <div class="img-container">
-                <img src="assets/img/producto1.jpg" alt="Perfume My Kingdom">
-            </div>
-            <h4>Perfume My Kingdom</h4>
-            <p>$31.400</p>
-            <button>Comprar</button>
+        <div class="carro">
+            <img src="https://picsum.photos/400/300?random=1" alt="City Car">
+            <p class="modelo">🚗 City Car</p>
+            <button class="btn-carro">Ver ficha técnica</button>
         </div>
 
-        <div class="card">
-            <div class="img-container">
-                <img src="assets/img/producto2.jpg" alt="Perfume Phantom">
-            </div>
-            <h4>Perfume Phantom</h4>
-            <p>$45.800</p>
-            <button>Comprar</button>
+        <div class="carro">
+            <img src="https://picsum.photos/400/300?random=2" alt="Urban EV">
+            <p class="modelo">🚘 Urban EV</p>
+            <button class="btn-carro">Ver ficha técnica</button>
         </div>
 
-        <div class="card">
-            <div class="img-container">
-                <img src="assets/img/producto3.jpg" alt="Zapatos Formales">
-            </div>
-            <h4>Zapatos Formales</h4>
-            <p>$29.900</p>
-            <button>Comprar</button>
+        <div class="carro">
+            <img src="https://picsum.photos/400/300?random=3" alt="Smart Drive">
+            <p class="modelo">⚡ Smart Drive</p>
+            <button class="btn-carro">Ver ficha técnica</button>
         </div>
 
-        <div class="card">
-            <div class="img-container">
-                <img src="assets/img/producto4.jpg" alt="Chaqueta Deportiva">
-            </div>
-            <h4>Chaqueta Deportiva</h4>
-            <p>$39.900</p>
-            <button>Comprar</button>
+        <div class="carro">
+            <img src="https://picsum.photos/400/300?random=4" alt="Eco Car">
+            <p class="modelo">🌱 Eco Car</p>
+            <button class="btn-carro">Ver ficha técnica</button>
         </div>
 
-        <div class="card">
-            <div class="img-container">
-                <img src="assets/img/producto5.jpg" alt="Abrigo Mujer Café">
-            </div>
-            <h4>Abrigo Mujer Café</h4>
-            <p>$69.900</p>
-            <button>Comprar</button>
+        <div class="carro">
+            <img src="https://picsum.photos/400/300?random=5" alt="Future EV">
+            <p class="modelo">🚀 Future EV</p>
+            <button class="btn-carro">Ver ficha técnica</button>
         </div>
 
-        <div class="card">
-            <div class="img-container">
-                <img src="assets/img/producto6.jpg" alt="Abrigo Mujer Beige">
-            </div>
-            <h4>Abrigo Mujer Beige</h4>
-            <p>$74.900</p>
-            <button>Comprar</button>
+        <div class="carro">
+            <img src="https://picsum.photos/400/300?random=6" alt="City Compact">
+            <p class="modelo">🏙️ City Compact</p>
+            <button class="btn-carro">Ver ficha técnica</button>
         </div>
 
-        <div class="card">
-            <div class="img-container">
-                <img src="assets/img/producto7.jpg" alt="Polera Negra">
-            </div>
-            <h4>Polera Negra</h4>
-            <p>$19.900</p>
-            <button>Comprar</button>
+        <div class="carro">
+            <img src="https://picsum.photos/400/300?random=1" alt="City Car">
+            <p class="modelo">🚗 City Car</p>
+            <button class="btn-carro">Ver ficha técnica</button>
         </div>
 
-        <div class="card">
-            <div class="img-container">
-                <img src="assets/img/producto8.jpg" alt="Polera Gris">
-            </div>
-            <h4>Polera Gris</h4>
-            <p>$17.900</p>
-            <button>Comprar</button>
+        <div class="carro">
+            <img src="https://picsum.photos/400/300?random=2" alt="Urban EV">
+            <p class="modelo">🚘 Urban EV</p>
+            <button class="btn-carro">Ver ficha técnica</button>
         </div>
 
-        <div class="card">
-            <div class="img-container">
-                <img src="assets/img/producto9.jpg" alt="Perfume Red">
-            </div>
-            <h4>Perfume Red</h4>
-            <p>$52.900</p>
-            <button>Comprar</button>
+
+        <!-- PAGINACIÓN -->
+        <div class="paginacion">
+            <span>&lt;</span>
+            <span class="activo">1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>&gt;</span>
         </div>
 
     </main>
 
-    <!-- FOOTER -->
+    <!-- ===== FOOTER (MOBILE / TABLET) ===== -->
     <footer class="footer">
-        © 2026 Mi E-commerce
+        <div class="footer-icons">
+            <span>🚗</span>
+            <span>⚡</span>
+            <span>🔋</span>
+        </div>
+        <p>© 2026 Electric Cars · Movilidad sustentable</p>
     </footer>
 
 </div>
