@@ -2,130 +2,413 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Electric Cars Store</title>
+    <title>Contador al Día</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
 <div class="layout">
 
-    <!-- ===== MENÚ DE NAVEGACIÓN ===== -->
-    <nav class="menu">
-
-        <div class="menu-top">
-            <span class="logo">🚗 Electric Cars</span>
-
-            <!-- Control de navegación móvil-->
-            <input type="checkbox" id="nav-toggle">
-            <label for="nav-toggle" class="nav-control">☰</label>
+    <!-- ================= MENÚ ================= -->
+    <aside class="menu">
+        <div class="logo">
+            <div class="logo-icon">📊</div>
+            <div class="logo-text">
+                <h2>Contador</h2>
+                <span>al Día</span>
+            </div>
         </div>
 
-        <ul class="menu-links">
-            <li class="activo">🚘 Inicio</li>
-            <li>📋 Catálogo</li>
-            <li>⚡ Modelos EV</li>
-            <li>🛠️ Servicio Técnico</li>
-            <li>📞 Contacto</li>
-        </ul>
-
-        <!-- Información inferior del menú (desktop) -->
-
-        <footer class="menu-footer">
-            <div class="footer-icons">
-                <span>🚗</span>
-                <span>⚡</span>
-                <span>🔋</span>
-            </div>
-            <p>© 2026 Electric Cars · Movilidad sustentable</p>
-        </footer>
-
-    </nav>
-
-    <!-- ===== FILTROS DE VEHÍCULOS ===== -->
-    <aside class="filtros">
-        <label for="ordenar">Ordenar vehículos por:</label>
-        <select id="ordenar">
-            <option>Precio</option>
-            <option>Marca</option>
-            <option>Modelo</option>
-            <option>Año</option>
-        </select>
+        <nav class="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#quienes">Quiénes Somos</a>
+            <a href="#documentos">Documentos</a>
+            <a href="#proceso">Proceso</a>
+            <a href="#faq">Preguntas Frecuentes</a>
+            <a href="#contacto" class="nav-cta">Contacto</a>
+        </nav>
     </aside>
 
-    <!-- ===== CATÁLOGO DE AUTOS ===== -->
-    <main class="productos">
+    <!-- ================= CONTENIDO ================= -->
+    <main class="contenido">
 
-        <div class="carro">
-            <img src="https://picsum.photos/400/300?random=1" alt="City Car">
-            <p class="modelo">🚗 City Car</p>
-            <button class="btn-carro">Ver ficha técnica</button>
-        </div>
+        <!-- HERO -->
+        <section class="hero" id="inicio">
+            <h1>Tu contabilidad en orden, clara y sin estrés</h1>
+            <p class="hero-sub">
+                Acompañamos a personas, emprendedores y pymes en el cumplimiento contable y tributario,
+                entregando información clara, respaldo documental y tranquilidad durante todo el año.
+            </p>
+            <p>
+                En <strong>Contador al Día</strong> transformamos la contabilidad en una herramienta
+                de control y crecimiento, para que puedas enfocarte en lo realmente importante:
+                hacer crecer tu negocio.
+            </p>
+        </section>
 
-        <div class="carro">
-            <img src="https://picsum.photos/400/300?random=2" alt="Urban EV">
-            <p class="modelo">🚘 Urban EV</p>
-            <button class="btn-carro">Ver ficha técnica</button>
-        </div>
+        <!-- ================= SERVICIOS ================= -->
 
-        <div class="carro">
-            <img src="https://picsum.photos/400/300?random=3" alt="Smart Drive">
-            <p class="modelo">⚡ Smart Drive</p>
-            <button class="btn-carro">Ver ficha técnica</button>
-        </div>
+        <section class="galeria" id="servicios">
+            <h2>Servicios Contables</h2>
 
-        <div class="carro">
-            <img src="https://picsum.photos/400/300?random=4" alt="Eco Car">
-            <p class="modelo">🌱 Eco Car</p>
-            <button class="btn-carro">Ver ficha técnica</button>
-        </div>
+            <p class="intro">
+                Nuestro servicio contable es integral, personalizado y orientado al cumplimiento
+                tributario. Nos adaptamos a la realidad de cada cliente, considerando el tamaño,
+                rubro y etapa del negocio, con el objetivo de entregar información clara, ordenada
+                y oportuna para una correcta toma de decisiones financieras.
+            </p>
 
-        <div class="carro">
-            <img src="https://picsum.photos/400/300?random=5" alt="Future EV">
-            <p class="modelo">🚀 Future EV</p>
-            <button class="btn-carro">Ver ficha técnica</button>
-        </div>
+            <p class="intro">
+                Trabajamos con altos estándares de confidencialidad, responsabilidad y cumplimiento
+                normativo, asegurando que cada proceso contable se encuentre correctamente respaldado
+                documentalmente y alineado con la normativa vigente del Servicio de Impuestos Internos (SII).
+                Nuestro enfoque busca prevenir errores, reducir riesgos tributarios y entregar
+                tranquilidad permanente a nuestros clientes.
+            </p>
 
-        <div class="carro">
-            <img src="https://picsum.photos/400/300?random=6" alt="City Compact">
-            <p class="modelo">🏙️ City Compact</p>
-            <button class="btn-carro">Ver ficha técnica</button>
-        </div>
+            <div class="galeria-grid">
 
-        <div class="carro">
-            <img src="https://picsum.photos/400/300?random=1" alt="City Car">
-            <p class="modelo">🚗 City Car</p>
-            <button class="btn-carro">Ver ficha técnica</button>
-        </div>
+                <div class="card">
+                    <img src="assets/img/iva.png" alt="Declaración de IVA">
+                    <h3>Declaraciones de IVA</h3>
+                    <p>
+                        Registro y control mensual de compras y ventas, revisión de documentos tributarios,
+                        validación de créditos y débitos fiscales y presentación oportuna del
+                        Formulario 29 ante el SII, evitando errores y posibles sanciones.
+                    </p>
+                </div>
 
-        <div class="carro">
-            <img src="https://picsum.photos/400/300?random=2" alt="Urban EV">
-            <p class="modelo">🚘 Urban EV</p>
-            <button class="btn-carro">Ver ficha técnica</button>
-        </div>
+                <div class="card">
+                    <img src="assets/img/financieros.png" alt="Estados Financieros">
+                    <h3>Estados Financieros</h3>
+                    <p>
+                        Elaboración de balances generales, estados de resultados y reportes financieros
+                        claros y confiables, que permiten conocer la situación real del negocio y
+                        apoyar la toma de decisiones estratégicas.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/renta.jpg" alt="Renta Anual">
+                    <h3>Renta Anual</h3>
+                    <p>
+                        Preparación, revisión y presentación de la declaración anual de impuestos,
+                        asegurando el correcto cumplimiento tributario y la adecuada aplicación de
+                        beneficios y créditos dentro del marco legal vigente.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/asesoria.jpg" alt="Asesoría Tributaria">
+                    <h3>Asesoría Tributaria</h3>
+                    <p>
+                        Orientación permanente frente a consultas tributarias, fiscalizaciones del SII,
+                        cambios normativos y apoyo en procesos administrativos, entregando respaldo
+                        y seguridad al contribuyente.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/remuneraciones.jpg" alt="Remuneraciones">
+                    <h3>Remuneraciones y RRHH</h3>
+                    <p>
+                        Confección de liquidaciones de sueldo, contratos de trabajo, finiquitos,
+                        cálculo de imposiciones y declaración mensual en Previred, cumpliendo con
+                        la normativa laboral vigente.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/gestion.jpg" alt="Gestión Contable">
+                    <h3>Gestión Contable Mensual</h3>
+                    <p>
+                        Registro contable ordenado y actualizado, conciliaciones bancarias periódicas
+                        y control permanente de la información financiera, asegurando consistencia
+                        y trazabilidad de los datos.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/reporte.jpg" alt="Reportes">
+                    <h3>Reportes y Análisis</h3>
+                    <p>
+                        Elaboración de informes claros y comprensibles que permiten evaluar el
+                        desempeño del negocio, identificar oportunidades de mejora y apoyar
+                        la planificación financiera.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img src="assets/img/inicio.jpg" alt="Inicio de Actividades">
+                    <h3>Inicio de Actividades</h3>
+                    <p>
+                        Acompañamiento completo a nuevos emprendedores: inicio de actividades ante
+                        el SII, elección de régimen tributario y orientación inicial para la correcta
+                        puesta en marcha del negocio.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        
+
+        <!-- ================= QUIÉNES SOMOS ================= -->
+
+        <section class="quienes" id="quienes">
+            <h2>¿Quiénes Somos?</h2>
+
+            <div class="quienes-contenido">
+
+                <div class="quienes-texto">
+                    <p class="quienes-destacado">
+                        Somos un servicio contable enfocado en entregar tranquilidad, confianza y claridad
+                        a nuestros clientes.
+                    </p>
+
+                    <p>
+                        Entendemos que la contabilidad suele ser una fuente de preocupación, por lo que nuestro
+                        principal objetivo es simplificar los procesos contables y transformar la información
+                        financiera en datos claros, útiles y comprensibles.
+                    </p>
+
+                    <p>
+                        Creemos en una relación cercana y transparente, basada en la comunicación constante
+                        y el acompañamiento permanente. Para nosotros, cada cliente es único, por lo que
+                        adaptamos nuestros servicios a la realidad de su negocio, considerando su tamaño,
+                        rubro y etapa de desarrollo.
+                    </p>
+
+                    <p>
+                        Trabajamos bajo principios de responsabilidad, confidencialidad y estricto cumplimiento
+                        normativo, asegurando que la información contable se mantenga ordenada, respaldada
+                        y disponible en todo momento.
+                    </p>
+
+                    <p>
+                        Acompañamos a nuestros clientes durante todo el año tributario, no solo en períodos
+                        de declaración, entregando orientación oportuna y apoyo continuo para una correcta
+                        toma de decisiones financieras y un crecimiento sostenible.
+                    </p>
+                </div>
+
+                <div class="quienes-img">
+                    <img src="assets/img/quienessomos.jpg" alt="Equipo Contable">
+                </div>
+
+            </div>
+        </section>
 
 
-        <!-- PAGINACIÓN -->
-        <div class="paginacion">
-            <span>&lt;</span>
-            <span class="activo">1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>&gt;</span>
-        </div>
+        <!-- ================= DOCUMENTOS ================= -->
+
+
+        <section class="documentos" id="documentos">
+            <h2>Gestión Documental</h2>
+
+            <p class="intro destacado-doc">
+                Organizamos, respaldamos y resguardamos toda la documentación contable de forma
+                segura y ordenada, permitiendo enfrentar fiscalizaciones, auditorías y revisiones
+                con total tranquilidad.
+            </p>
+
+            <p class="intro">
+                Nuestro sistema de gestión documental garantiza que cada documento se encuentre
+                correctamente clasificado, disponible y respaldado, facilitando el acceso a la
+                información y asegurando el cumplimiento de las exigencias del Servicio de
+                Impuestos Internos (SII) y otras entidades fiscalizadoras.
+            </p>
+
+            <p class="intro">
+                Este enfoque no solo reduce riesgos tributarios y administrativos, sino que
+                también permite una mejor organización interna, mayor control de la información
+                financiera y una respuesta oportuna ante cualquier requerimiento.
+            </p>
+
+            <div class="documentos-grid">
+                <img src="assets/img/gestion-documental.jpg" alt="Documentación digital organizada">
+                <img src="assets/img/gestion-documental2.jpg" alt="Respaldo digital y seguridad de documentos">
+                <img src="assets/img/gestion-documental3.jpg" alt="Archivo contable físico ordenado">
+            </div>
+        </section>
+
+        <!-- ================= PROCESO ================= -->
+
+        <section class="proceso" id="proceso">
+            <h2>Nuestro Proceso de Trabajo</h2>
+
+            <p class="intro">
+                Nuestro servicio se desarrolla bajo un proceso estructurado y transparente,
+                diseñado para garantizar orden, cumplimiento y tranquilidad a nuestros clientes
+                durante todo el año tributario.
+            </p>
+
+            <div class="pasos">
+
+                <div class="paso">
+                    📁 <strong>Recepción y validación de información</strong>
+                    <p>
+                        Recibimos la documentación contable, revisamos su integridad y validamos
+                        que cumpla con los requisitos formales y tributarios necesarios.
+                    </p>
+                </div>
+
+                <div class="paso">
+                    📊 <strong>Análisis contable y tributario</strong>
+                    <p>
+                        Analizamos la información recibida, registramos los movimientos contables
+                        y evaluamos la correcta aplicación de la normativa vigente.
+                    </p>
+                </div>
+
+                <div class="paso">
+                    🧾 <strong>Declaraciones y reportes</strong>
+                    <p>
+                        Preparamos y presentamos declaraciones mensuales y anuales, junto con
+                        reportes claros que permiten conocer la situación financiera del negocio.
+                    </p>
+                </div>
+
+                <div class="paso">
+                    ✅ <strong>Seguimiento y asesoría continua</strong>
+                    <p>
+                        Acompañamos al cliente de forma permanente, resolviendo dudas, anticipando
+                        riesgos y apoyando la toma de decisiones financieras.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= FAQ ================= -->
+        <section class="faq" id="faq">
+            <h2>Preguntas Frecuentes</h2>
+
+            <details>
+                <summary>¿Qué documentos debo enviar cada mes?</summary>
+                <p>
+                    Facturas de compra y venta, boletas, movimientos bancarios,
+                    comprobantes de pago y cualquier otro documento relevante
+                    para el registro contable del período.
+                </p>
+            </details>
+
+            <details>
+                <summary>¿Trabajan con emprendedores y negocios nuevos?</summary>
+                <p>
+                    Sí. Acompañamos a emprendedores desde el inicio de actividades,
+                    orientándolos en la elección del régimen tributario y en la
+                    correcta organización contable desde el primer mes.
+                </p>
+            </details>
+
+            <details>
+                <summary>¿La asesoría es presencial u online?</summary>
+                <p>
+                    Nuestro servicio es principalmente online, lo que permite una
+                    atención rápida y constante, sin importar la ubicación del cliente.
+                </p>
+            </details>
+
+            <details>
+                <summary>¿Puedo contratar solo algunos servicios?</summary>
+                <p>
+                    Sí. Nuestros servicios son flexibles y pueden adaptarse según
+                    las necesidades específicas de cada cliente.
+                </p>
+            </details>
+
+            <details>
+                <summary>¿Cómo se resguarda la información contable?</summary>
+                <p>
+                    Toda la información se maneja bajo estrictos estándares de
+                    confidencialidad, con respaldo digital y acceso controlado.
+                </p>
+            </details>
+
+            <details>
+                <summary>¿Qué pasa si tengo una fiscalización del SII?</summary>
+                <p>
+                    Te acompañamos durante todo el proceso, preparando la
+                    documentación requerida y brindando asesoría frente a
+                    observaciones o requerimientos.
+                </p>
+            </details>
+
+            <details>
+                <summary>¿Con qué frecuencia recibo reportes?</summary>
+                <p>
+                    Entregamos reportes de forma periódica, según el servicio
+                    contratado, permitiendo un control permanente del negocio.
+                </p>
+            </details>
+        </section>
+
+        <!-- ================= CONTACTO ================= -->
+
+        <section class="contacto-form" id="contacto">
+            <h2>Contáctanos</h2>
+
+            <p class="intro">
+                Completa el formulario y nos pondremos en contacto contigo a la brevedad.
+                Nuestro equipo responderá tu consulta de forma clara y oportuna.
+            </p>
+
+            <form>
+                <div class="campo">
+                    <label>Nombre completo</label>
+                    <input type="text" placeholder="Ej: Juan Pérez" required>
+                </div>
+
+                <div class="campo">
+                    <label>Correo electrónico</label>
+                    <input type="email" placeholder="Ej: correo@ejemplo.cl" required>
+                </div>
+
+                <div class="campo">
+                    <label>Mensaje</label>
+                    <textarea placeholder="Cuéntanos en qué te podemos ayudar"></textarea>
+                </div>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+
+        <!-- ================= FOOTER ================= -->
+        <footer class="footer">
+            <div class="footer-contenido">
+
+                <div class="footer-brand">
+                    <h3>Contador al Día</h3>
+                    <p>Asesoría contable profesional</p>
+                </div>
+
+                <div class="footer-contacto">
+                    <p>
+                        📧 <a href="mailto:contacto@contadoraldia.cl">contacto@contadoraldia.cl</a>
+                    </p>
+                    <p>
+                        📞 <a href="tel:+56912345678">+56 9 1234 5678</a>
+                    </p>
+                </div>
+
+                <div class="footer-redes">
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="LinkedIn">💼</a>
+                    <a href="#" aria-label="WhatsApp">💬</a>
+                    <a href="#" aria-label="Instagram">📸</a>
+                </div>
+
+            </div>
+
+            <div class="footer-copy">
+                © 2026 Contador al Día
+            </div>
+        </footer>
 
     </main>
-
-    <!-- ===== FOOTER (MOBILE / TABLET) ===== -->
-    <footer class="footer">
-        <div class="footer-icons">
-            <span>🚗</span>
-            <span>⚡</span>
-            <span>🔋</span>
-        </div>
-        <p>© 2026 Electric Cars · Movilidad sustentable</p>
-    </footer>
-
 </div>
 
 </body>
